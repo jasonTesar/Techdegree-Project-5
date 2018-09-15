@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+    <link rel="stylesheet" type='text/css' href="css/normalize.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/lightGallery/css/lightgallery.css" /> -->
+    <link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>An Interactive Photo Gallery</title>
   </head>
   <body>
@@ -17,33 +19,16 @@
         <input type="text" id="photoSearch" placeholder="Enter search terms here">
       </div>
       <!-- container div for thumbnail image grid -->
-      <div class="row clearfix">
-        <div class="thumbnail"><img src="images/thumbnails/01.jpg" alt="">
-        </div>
-        <div class="thumbnail"><img src="images/thumbnails/02.jpg" alt="">
-        </div>
-        <div class="thumbnail"><img src="images/thumbnails/03.jpg" alt="">
-        </div>
-        <div class="thumbnail"><img src="images/thumbnails/04.jpg" alt="">
-        </div>
-        <div class="thumbnail"><img src="images/thumbnails/05.jpg" alt="">
-        </div>
-        <div class="thumbnail"><img src="images/thumbnails/06.jpg" alt="">
-        </div>
-        <div class="thumbnail"><img src="images/thumbnails/07.jpg" alt="">
-        </div>
-        <div class="thumbnail"><img src="images/thumbnails/08.jpg" alt="">
-        </div>
-        <div class="thumbnail"><img src="images/thumbnails/09.jpg" alt="">
-        </div>
-        <div class="thumbnail"><img src="images/thumbnails/10.jpg" alt="">
-        </div>
-        <div class="thumbnail"><img src="images/thumbnails/11.jpg" alt="">
-        </div>
-        <div class="thumbnail"><img src="images/thumbnails/12.jpg" alt="">
-        </div>
+      <div class="row clearfix" id="gallery">
       </div>
     </div>
-
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Functions to build gallery divs, then populate them with html-->
+    <script>
+      divLoop();
+      imageLoop(imageText);
+    </script>
+    <script type="text/javascript" src="lightbox/js/lightbox-plus-jquery.js"></script>
   </body>
 </html>

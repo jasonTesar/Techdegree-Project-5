@@ -10,11 +10,17 @@ input {
   border-radius: 5px;
 }
 
+p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.25rem;
+}
+
 /* Layout Styles -----------------------------*/
 .container {
     width: 95%;
     margin: 1rem auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .row {
@@ -22,13 +28,23 @@ input {
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* Image Styles -----------------------------*/
 .thumbnail {
   float: left;
   margin: 1rem;
+}
+
+.roundedBorder {
+  padding: .5rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+}
+
+.roundedBorder:hover {
+    box-shadow: 0 0 4px 2px rgba(140, 140, 140, 0.2);
 }
 
 /* Clearfix -------------------------------- */
