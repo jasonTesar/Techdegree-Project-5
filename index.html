@@ -4,31 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
-    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
-    <link rel="stylesheet" type='text/css' href="css/normalize.css">
-    <!-- <link rel="stylesheet" type="text/css" href="/lightGallery/css/lightgallery.css" /> -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>An Interactive Photo Gallery</title>
   </head>
   <body>
-    <!-- container div for whole page -->
-    <div class="container">
-      <!-- container div for search bar -->
-      <div class="row">
-        <input type="text" id="photoSearch" placeholder="Enter search terms here">
+    <div class="container"> <!-- container div for whole page -->
+      <div class="row"> <!-- container div for search bar -->
+        <input type="text" id="photoSearch" placeholder="Enter photo criteria here">
       </div>
-      <!-- container div for thumbnail image grid -->
-      <div class="row clearfix" id="gallery">
-      </div>
+      <div class="row clearfix" id="gallery"></div> <!-- container div for thumbnail image grid -->
     </div>
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <!-- Functions to build gallery divs, then populate them with html-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="lightbox/js/lightbox-plus-jquery.js"></script>
     <script>
-      divLoop();
-      imageLoop(imageText);
-    </script>
-    <script type="text/javascript" src="lightbox/js/lightbox-plus-jquery.js"></script>
+      lightbox.option({
+        'positionFromTop': 20,
+        'wrapAround': true
+      })
+  </script>
   </body>
 </html>
